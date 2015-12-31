@@ -1,0 +1,34 @@
+{
+    "list": [
+        {
+            "id": 2569,
+            "name": "Samsung Galaxy Mega",
+            "date": "jun 20,2015",
+            "price": 521
+        },
+        {
+            "id": 9658,
+            "name": "Huawei Ascend P6",
+            "date": "jun 20,2015",
+            "price": 440
+        },
+        {
+            "id": 1101,
+            "name": "HTC One M8",
+            "date": "jun 20,2015",
+            "price": 680
+        },
+        {
+            "id": 2569,
+            "name": "Samsung Galaxy Alpha",
+            "date": "jun 20,2015",
+            "price": 870
+        },
+        {
+            "id": 6598,
+            "name": "LG G3",
+            "date": "jun 20,2015",
+            "price": 690
+        }
+    ]
+}
