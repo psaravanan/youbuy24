@@ -25,7 +25,7 @@
             <li id="top-search">
                 <a href="" data-ng-click="hctrl.openSearch()"><i class="tm-icon zmdi zmdi-search"></i></a>
             </li>
-            <li><a href=""><i class="tm-icon zmdi zmdi-plus"></i></a></li>
+            <li id="top-plus"><a href=""><i class="tm-icon zmdi zmdi-plus"></i></a></li>
             <li class="dropdown" uib-dropdown>
                 <a uib-dropdown-toggle href="">
                     <i class="tm-icon zmdi zmdi-email"></i>
@@ -95,7 +95,7 @@
 
                 </div>
             </li>
-            <li class="dropdown hidden-xs" uib-dropdown>
+            <li id="top-cart" class="dropdown hidden-xs" uib-dropdown>
                 <a uib-dropdown-toggle href="">
                     <i class="tm-icon zmdi zmdi-shopping-cart"></i>
                     <i class="tmn-counts">2</i>
@@ -160,12 +160,10 @@
                 </div>
             </li>
             <li class="dropdown" uib-dropdown>
-                <a uib-dropdown-toggle href="">
-                    <i class="tm-icon zmdi zmdi-circle-o"></i>
-                </a>
-                <ul class="dropdown-menu dm-icon pull-right">
-                    <li><a href=""><i class="zmdi zmdi-money"></i>Selling</a></li>
-                    <li><a href=""><i class="zmdi zmdi-money"></i>Buying</a></li>
+                <a uib-dropdown-toggle href=""><button type="button" class="btn btn-default btn-circle">P</button></a>
+                <ul id="text" class="dropdown-menu dm-icon pull-right">
+                    <li><a href=""><button type="button" class="btn btn-success">2</button></i><span>Selling</span></a></li>
+                    <li><a href=""><button type="button" class="btn btn-success">2</button></i><span>Buying</span></a></li>
                     <br/>
                     <li class="divider hidden-xs"></li>
                     <li><a href=""><i class="zmdi zmdi-settings"></i>Other Settings</a></li>

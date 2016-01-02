@@ -1,0 +1,41 @@
+<a class="navbar-brand" href="#"><img class="img-responsive" src="../img/logo.png"></a>
+<ul class="header-inner clearfix">
+    <li class="logo hidden-xs">
+       <a href=""><i class="zmdi zmdi-long-arrow-left"></i></a> 
+    </li>
+    <li class="logo hidden-xs">
+       <a href=""><span>|</span></a> 
+    </li>
+    <li class="logo hidden-xs">
+        <a href="">Selling</a>
+    </li>
+    <li class="pull-right">
+        <ul id="side-top" class="top-menu">
+
+            <li id="top-search">
+                <a href="" data-ng-click="hctrl.openSearch()"><i class="tm-icon zmdi zmdi-search"></i></a>
+            </li>
+            <li class="dropdown" uib-dropdown><a uib-dropdown-toggle href=""><i class="tm-icon zmdi zmdi-more-vert"></i></a>
+                <ul id="text" class="dropdown-menu dm-icon pull-right">
+                    <li><a href=""><button type="button" class="btn btn-success">2</button></i><span>Selling</span></a></li>
+                    <li><a href=""><button type="button" class="btn btn-success">2</button></i><span>Buying</span></a></li>
+                    <br/>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href=""><i class="zmdi zmdi-settings"></i>Other Settings</a></li>
+                    <li><a href=""><i class="zmdi zmdi-money"></i>Currency</a></li>
+                    <li><a href=""><i class="zmdi zmdi-translate"></i>Language</a></li>
+                    <li><a href=""><i class="zmdi zmdi-power"></i>Logout</a></li>
+                    <li><a href=""><i class="zmdi zmdi-help-outline"></i>help</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<!-- Top Search Content -->
+<div id="top-search-wrap">
+    <div class="tsw-inner">
+        <i id="top-search-close" class="zmdi zmdi-arrow-left" data-ng-click="hctrl.closeSearch()"></i>
+        <input type="text" data-ng-modal="searchText">
+    </div>
+</div>

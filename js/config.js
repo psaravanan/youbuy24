@@ -35,7 +35,30 @@ materialAdmin
                     }
                 }
             })
-
+            
+            //------------------------------
+            // MODIFY PAGES
+            //------------------------------
+            .state ('selling', {
+                url: '/selling',
+                templateUrl: 'views/selling.html'
+            })
+            .state ('buying', {
+                url: '/buying',
+                templateUrl: 'views/buying.html'
+            })
+            .state ('manage_store', {
+                url: '/manage_store',
+                templateUrl: 'views/manage_store.html'
+            })
+            .state ('security', {
+                url: '/security',
+                templateUrl: 'views/security.html'
+            })
+            .state ('app', {
+                url: '/app',
+                templateUrl: 'views/app.html'
+            })
 
             //------------------------------
             // HEADERS

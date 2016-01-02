@@ -2,7 +2,7 @@
  * Following CSS codes are used only for demo purpose thus you can remove them completly whenever you want. 
  */
 
-.toggle-switch .ts-label {
+ .toggle-switch .ts-label {
     min-width: 130px;
 }
 
@@ -162,28 +162,21 @@
 .navbar-brand {
     max-width: 150px;
     margin-left: 4%;
- 
+
+}
+#card-list
+{
+    margin-left: 10px;
 }
 #side
 {
     margin-right: 19%;
-}
-#card-list
-{
-    margin-top: -15px;
-    font-size: 15px;
-}
-#card-list li
-{   
-    list-style-type: none;
-    margin-top: 15px;
 }
 .pagination li a {
    border-radius: 50% !important;margin: 0 6px;
 }
 #dp 
 {   
-    margin-top: 10px;
     max-width: 30px;
 }
 #bar-bottom
@@ -195,14 +188,86 @@
 {
     background-color: #99e5ff;         
 }
-/*.dropdown-menu li
-{
-    margin-left: 20%;
+.nav-pills a {
+    color: black;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-*/
-@media(max-width:480px) {
+.nav-pills a span i
+{
+    margin-left: 33px;  
+}
+.nav-pills a span button
+{
+    margin-left: 72px;  
+}
+#i-size
+{
+    font-size: 20px;
+    color: red;
+}
+#f-icon
+{   
+    font-size: 30px;    
+}
+#text span
+{
+    margin-left: 20px;
+}
+#icon-s
+{
+    margin-left: -13px;
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+#page
+{
+    margin-top: 17px;
+    margin-left: 300px;
+}
+/*alter_header start*/
+#side-top
+{
+    margin-right: 42px;
+}
+
+@media(max-width:320px) {
   .navbar-brand
   {
     display: none;
-  }  
+  } 
+
+ /* .nav-pills a span i
+  {
+  margin-left: 60px;  
+  }
+
+  .nav-pills a span button
+  {
+    margin-left: 95px;  
+  }*/
+
+  #top-search
+  {
+    display: none;
+  }
+
+  #top-plus
+  {
+    display:none;
+  }
+  #page
+  {
+    display: none;
+  }
 }

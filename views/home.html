@@ -16,19 +16,18 @@
                 <div class="row">
                     <div class="col-sm-3 col-md-3">
                        <div class="card">
-                         <ul id="card-list" class="table table-inner table-vmiddle">
+                         <ul class="nav nav-pills nav-stacked">
                             <li>
                                 <a href="#">
-                                    <img src="../img/profile-pics/2.jpg" id="dp" class="profile-image img-circle">Youbuy24</a>
+                                    <img src="../img/profile-pics/2.jpg" id="dp" class="profile-image img-circle"><span id="card-list">Youbuy24</span></a>
                                 </li>
-                                <li><a href=""></i>Selling</a></li>
-                                <li><a href=""></i>Buying</a></li>
-                                <li><a href=""></i>Manage Store</a></li>
-                                <li><a href=""></i>Security</a></li>
-                                <li><a href=""></i>App</a></li>
+                                <li><a href="#/selling">Selling<span><button type="button" class="btn btn-success">14</button></span></a></li>
+                                <li><a href="#/buying">Buying<span><button type="button" class="btn btn-success">15</button></span></a></li>
+                                <li><a href="#/manage_store">Manage Store<span><i id="i-size" class="zmdi zmdi-alert-circle-o"></i></span></a></li>
+                                <li><a href="#/security">Security</a></li>
+                                <li><a href="#/app">App</a></li>
                             </ul>
                         </div>
-
 
                         <div class="mini-charts-item bgm-cyan">
                             <div class="clearfix">
@@ -73,10 +72,9 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Name</th>
-                                            <th>Date</th>
-                                            <th>Price</th>
-                                            <th>Status</th>
+                                            <th>NAME</th>
+                                            <th>DATE</th>
+                                            <th>PRICE</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -85,7 +83,7 @@
                                             <td>{{ w.name }}</td>
                                             <td>{{ w.date }}</td>
                                             <td>{{ w.price }}</td>
-                                            <td style="text-align: center;">x</td>
+                                            <!-- <td><a href="#"><span id="icon-s"><button type="button" class="btn btn-danger">Rejected</button></a></span></td> -->
                                         </tr>
                                     </tbody>
                                 </table>
@@ -93,18 +91,24 @@
                         </div>
                         <div id="bar-bottom" class="col-sm-6 col-md-12">
                          <ul class="pagination pagination-sm">
-                             <li><a href="#">&lsaquo;</a></li>
+                             <li><a href="#"><i class="zmdi zmdi-chevron-left"></i></a></li>
                              <li class="active"><a href="#">1</a></li>
                              <li><a href="#">2</a></li>
-                             <li><a href="#">&rsaquo;</a></li>
+                             <li><a href="#"><i class="zmdi zmdi-chevron-right"></i></a></li>
                          </ul>
-                     </div>
-                 </div>
-                 <!--       Recent Items  -->
-             </div>
-         </div>
+                         <div id="page" class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-default">5</button>
+                          <button type="button" class="btn btn-default">10</button>
+                          <button type="button" class="btn btn-default">20</button>
+                          <button type="button" class="btn btn-default">30</button>
+                         </div>
+                      </div>
+                  </div>
+                  <!--       Recent Items  -->
+              </div>
+          </div>
 
-         <div class="row">
+          <div class="row">
             <div class="col-sm-6">
                 <!-- Todo Lists -->
 
