@@ -160,11 +160,49 @@
     vertical-align: top;
 }
 .navbar-brand {
-    max-width: 8%;
-    margin-top: 0.5%;
+    max-width: 150px;
+    margin-left: 4%;
+ 
+}
+#side
+{
+    margin-right: 19%;
+}
+#card-list
+{
+    margin-top: -15px;
+    font-size: 15px;
+}
+#card-list li
+{   
+    list-style-type: none;
+    margin-top: 15px;
+}
+.pagination li a {
+   border-radius: 50% !important;margin: 0 6px;
+}
+#dp 
+{   
+    margin-top: 10px;
+    max-width: 30px;
+}
+#bar-bottom
+{
+    border-bottom: 2px solid #e0e0d1;
+    margin-top: -28px;  
+}
+.table-hover tbody tr:hover td
+{
+    background-color: #99e5ff;         
 }
 /*.dropdown-menu li
 {
     margin-left: 20%;
 }
 */
+@media(max-width:480px) {
+  .navbar-brand
+  {
+    display: none;
+  }  
+}

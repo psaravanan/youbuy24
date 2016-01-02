@@ -15,6 +15,21 @@
             <div class="mini-charts">
                 <div class="row">
                     <div class="col-sm-3 col-md-3">
+                       <div class="card">
+                         <ul id="card-list" class="table table-inner table-vmiddle">
+                            <li>
+                                <a href="#">
+                                    <img src="../img/profile-pics/2.jpg" id="dp" class="profile-image img-circle">Youbuy24</a>
+                                </li>
+                                <li><a href=""></i>Selling</a></li>
+                                <li><a href=""></i>Buying</a></li>
+                                <li><a href=""></i>Manage Store</a></li>
+                                <li><a href=""></i>Security</a></li>
+                                <li><a href=""></i>App</a></li>
+                            </ul>
+                        </div>
+
+
                         <div class="mini-charts-item bgm-cyan">
                             <div class="clearfix">
                                 <div class="chart stats-bar" data-sparkline-bar></div>
@@ -25,6 +40,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!--  Recent Items -->         
                     <div class="col-sm-6 col-md-9">
                         <div class="card" data-ng-controller="recentitemCtrl as rictrl">
@@ -52,40 +68,50 @@
                             </div>
 
                             <div class="card-body m-t-0">
-                                <table class="table table-inner table-vmiddle">
+                                <!-- <input type="text" class="input-medium search-query" data-ng-model="searchText.id" placeholder="Search"> -->
+                                <table class="table table-striped table-hover">
                                     <thead>
                                         <tr>
                                             <th>ID</th>
                                             <th>Name</th>
                                             <th>Date</th>
-                                            <th style="width: 60px">Price</th>
+                                            <th>Price</th>
+                                            <th>Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr data-ng-repeat="w in rictrl.riResult.list">
+                                        <tr data-ng-repeat="w in rictrl.riResult.list | filter:searchText:strict">
                                             <td class="f-500 c-cyan">{{ w.id }}</td>
                                             <td>{{ w.name }}</td>
                                             <td>{{ w.date }}</td>
-                                            <td class="f-500 c-cyan">{{ w.price }}</td>
+                                            <td>{{ w.price }}</td>
+                                            <td style="text-align: center;">x</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-
                         </div>
-                    </div>
-                    <!--       Recent Items  -->
-                </div>
-            </div>
+                        <div id="bar-bottom" class="col-sm-6 col-md-12">
+                         <ul class="pagination pagination-sm">
+                             <li><a href="#">&lsaquo;</a></li>
+                             <li class="active"><a href="#">1</a></li>
+                             <li><a href="#">2</a></li>
+                             <li><a href="#">&rsaquo;</a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 <!--       Recent Items  -->
+             </div>
+         </div>
 
-            <div class="row">
-                <div class="col-sm-6">
-                    <!-- Todo Lists -->
-                    
-                </div>                
-            </div>
+         <div class="row">
+            <div class="col-sm-6">
+                <!-- Todo Lists -->
+
+            </div>                
         </div>
-    </section>
+    </div>
+</section>
 </section>
 
 <footer id="footer" data-ng-include="'template/footer.html'"></footer>

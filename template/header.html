@@ -13,7 +13,7 @@
     </li>
 
     <li class="pull-right">
-        <ul class="top-menu">
+        <ul id="side" class="top-menu">
 
             <li id="toggle-width">
                 <div class="toggle-switch">
@@ -165,7 +165,6 @@
                 </a>
                 <ul class="dropdown-menu dm-icon pull-right">
                     <li><a href=""><i class="zmdi zmdi-money"></i>Selling</a></li>
-                    <br/>
                     <li><a href=""><i class="zmdi zmdi-money"></i>Buying</a></li>
                     <br/>
                     <li class="divider hidden-xs"></li>
@@ -187,6 +186,6 @@
 <div id="top-search-wrap">
     <div class="tsw-inner">
         <i id="top-search-close" class="zmdi zmdi-arrow-left" data-ng-click="hctrl.closeSearch()"></i>
-        <input type="text">
+        <input type="text" data-ng-modal="searchText">
     </div>
 </div>
