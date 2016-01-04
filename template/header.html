@@ -1,5 +1,7 @@
-<a class="navbar-brand" href="#"><img class="img-responsive" src="../img/logo.png"></a>
 <ul class="header-inner clearfix">
+<li id="img-height" class="logo hidden-xs">
+    <a data-ui-sref="home"><img src="../img/logo.png"></a>
+</li>
     <li id="menu-trigger" data-target="mainmenu" data-toggle-sidebar data-model-left="mactrl.sidebarToggle.left" data-ng-class="{ 'open': mactrl.sidebarToggle.left === true }">
         <div class="line-wrap">
             <div class="line top"></div>
@@ -17,15 +19,14 @@
 
             <li id="toggle-width">
                 <div class="toggle-switch">
-                    <input id="tw-switch" type="checkbox" hidden="hidden" data-change-layout="mactrl.layoutType">
+                    <input id="tw-switch" type="checkbox" hidden="hidden" data-toggle-sidebar data-model-left="mactrl.sidebarToggle.left">
                     <label for="tw-switch" class="ts-helper"></label>
                 </div>
             </li>
-
+            <li id="top-plus"><a href=""><i class="tm-icon zmdi zmdi-plus"></i></a></li>
             <li id="top-search">
                 <a href="" data-ng-click="hctrl.openSearch()"><i class="tm-icon zmdi zmdi-search"></i></a>
             </li>
-            <li id="top-plus"><a href=""><i class="tm-icon zmdi zmdi-plus"></i></a></li>
             <li class="dropdown" uib-dropdown>
                 <a uib-dropdown-toggle href="">
                     <i class="tm-icon zmdi zmdi-email"></i>
@@ -95,7 +96,7 @@
 
                 </div>
             </li>
-            <li id="top-cart" class="dropdown hidden-xs" uib-dropdown>
+            <li class="dropdown hidden-xs" uib-dropdown>
                 <a uib-dropdown-toggle href="">
                     <i class="tm-icon zmdi zmdi-shopping-cart"></i>
                     <i class="tmn-counts">2</i>
@@ -173,9 +174,6 @@
                     <li><a href=""><i class="zmdi zmdi-help-outline"></i>help</a></li>
                 </ul>
             </li>
-            <!-- <li class="hidden-xs" data-target="chat" data-toggle-sidebar data-model-right="mactrl.sidebarToggle.right" data-ng-class="{ 'open': mactrl.sidebarToggle.right === true }">
-                <a href=""><i class="tm-icon zmdi zmdi-comment-alt-text"></i></a>
-            </li> -->
         </ul>
     </li>
 </ul>
@@ -184,6 +182,6 @@
 <div id="top-search-wrap">
     <div class="tsw-inner">
         <i id="top-search-close" class="zmdi zmdi-arrow-left" data-ng-click="hctrl.closeSearch()"></i>
-        <input type="text" data-ng-modal="searchText">
+        <input type="text">
     </div>
 </div>

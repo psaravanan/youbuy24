@@ -1,8 +1,7 @@
 /*
  * Following CSS codes are used only for demo purpose thus you can remove them completly whenever you want. 
  */
-
- .toggle-switch .ts-label {
+.toggle-switch .ts-label {
     min-width: 130px;
 }
 
@@ -159,34 +158,12 @@
     margin-right: 25px;
     vertical-align: top;
 }
-.navbar-brand {
-    max-width: 150px;
-    margin-left: 4%;
 
-}
-#card-list
-{
-    margin-left: 10px;
-}
-#side
-{
-    margin-right: 19%;
-}
-.pagination li a {
-   border-radius: 50% !important;margin: 0 6px;
-}
+
+/*Alter start*/
 #dp 
 {   
     max-width: 30px;
-}
-#bar-bottom
-{
-    border-bottom: 2px solid #e0e0d1;
-    margin-top: -28px;  
-}
-.table-hover tbody tr:hover td
-{
-    background-color: #99e5ff;         
 }
 .nav-pills a {
     color: black;
@@ -198,28 +175,16 @@
 }
 .nav-pills a span i
 {
-    margin-left: 33px;  
+    margin-left: 65px;  
 }
 .nav-pills a span button
 {
-    margin-left: 72px;  
+    margin-left: 100px;  
 }
 #i-size
 {
     font-size: 20px;
     color: red;
-}
-#f-icon
-{   
-    font-size: 30px;    
-}
-#text span
-{
-    margin-left: 20px;
-}
-#icon-s
-{
-    margin-left: -13px;
 }
 .btn-circle {
   width: 30px;
@@ -230,44 +195,163 @@
   line-height: 1.428571429;
   border-radius: 15px;
 }
+#text span
+{
+    margin-left: 20px;
+}
+#side
+{
+    margin-right: 11%;
+}
+.table-hover tbody tr:hover td
+{
+    background-color: #99e5ff;         
+}
+#f-icon
+{   
+    font-size: 30px;    
+}
+#bar-bottom{
+
+}
+.pagination{
+    margin-left: 50px;
+}
 #page
 {
     margin-top: 17px;
-    margin-left: 300px;
+    margin-left: 340px;
 }
-/*alter_header start*/
-#side-top
+#img-height a img
 {
-    margin-right: 42px;
+    max-width: 100px;
+    margin-left: 50px;
+    margin-top: -10px;
+}
+.active-menu
+{
+    
+}
+/*Alter end*/
+@media(max-width:980px) {
+    .pagination{
+        margin-left: 22px;
+    }
+    #page{
+        margin-left: 67px;
+    }
+    #bar-bottom{
+        display: none;
+    }
+    .nav-pills a span i{
+        margin-left: 200px;  
+    }
+    .nav-pills a span button{
+        margin-left: 235px;  
+    }
+    #img-height a img
+    {
+        max-width: 100px;
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+    #side {
+    margin-right: 4%;
+    }
+}
+
+@media(max-width:800px) {
+    .pagination{
+        margin-left: 5px;
+    }
+    #page{
+        margin-left: 14px;
+    }
+    #bar-bottom{
+        display: none;
+    }
+    .nav-pills a span i{
+        margin-left: 125px;  
+    }
+    .nav-pills a span button{
+        margin-left: 160px;  
+    }
+    #img-height a img
+    {
+        max-width: 100px;
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+    #side {
+    margin-right: 4%;
+    }
+}
+
+@media(max-width:768px) {
+    .pagination{
+        margin-left: 4px;
+    }
+    #page{
+        margin-left: 0px;
+    }
+    #bar-bottom{
+        display: none;
+    }
+    .nav-pills a span i{
+        margin-left: 125px;  
+    }
+    .nav-pills a span button{
+        margin-left: 160px;  
+    }
+    #img-height a img
+    {
+        max-width: 100px;
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+    #side {
+    margin-right: 4%;
+    }
+}
+
+@media(max-width:360px) {
+    .pagination{
+        margin-left: 69px;
+    }
+    #side {
+        margin-right: 0;
+    }
+    #top-plus{
+        display: none;
+    }
+    #page{
+        margin-left: 94px;
+    }
+    .nav-pills a span i{
+        margin-left: 125px;  
+    }
+    .nav-pills a span button{
+        margin-left: 160px;  
+    }
 }
 
 @media(max-width:320px) {
-  .navbar-brand
-  {
-    display: none;
-  } 
-
- /* .nav-pills a span i
-  {
-  margin-left: 60px;  
-  }
-
-  .nav-pills a span button
-  {
-    margin-left: 95px;  
-  }*/
-
-  #top-search
-  {
-    display: none;
-  }
-
-  #top-plus
-  {
-    display:none;
-  }
-  #page
-  {
-    display: none;
-  }
+    .pagination{
+        margin-left: 50px;
+    }
+    #side {
+        margin-right: 0;
+    }
+    #top-plus{
+        display: none;
+    }
+    #page{
+        margin-left: 73px;
+    }
+    .nav-pills a span i{
+        margin-left: 85px;  
+    }
+    .nav-pills a span button{
+        margin-left: 120px;  
+    }
 }

@@ -35,9 +35,8 @@ materialAdmin
                     }
                 }
             })
-            
             //------------------------------
-            // MODIFY PAGES
+            // ALT LINKS
             //------------------------------
             .state ('selling', {
                 url: '/selling',

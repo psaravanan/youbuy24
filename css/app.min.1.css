@@ -10209,7 +10209,11 @@ h6 small,
   height: 35px;
   cursor: pointer;
 }
-
+#menu-trigger1 {
+  width: 65px;
+  height: 35px;
+  cursor: pointer;
+}
 #menu-trigger .line-wrap .line {
   background-color: #fff;
 }
